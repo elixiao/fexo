@@ -8,10 +8,10 @@
         <span><%= date(post.date, 'YYYY.MM.DD') %></span>
       </span>
 
-      <% if (config.author){ %>
+      <% if (post.author){ %>
         <span class="article-author">
           <i class="icon-user"></i>
-          <span><%= config.author %></span>
+          <span><%= post.author %></span>
         </span>
       <% } %>
 
