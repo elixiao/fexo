@@ -17,12 +17,12 @@ gulp.task('default', ['sass', 'scripts'], function() {
 
 gulp.task('sass', function() {
   return gulp.src('./source/sass/*.scss')
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'compressed'
     }).on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
-    .pipe(sourcemaps.write('.'))
+    // .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./source/css'));
 });
 
